@@ -1,10 +1,9 @@
-import 'package:com/question.dart';
 import 'package:flutter/material.dart';
 
 class Result extends StatelessWidget {
   final int resultScore;
-  var questionIndex;
-  var startOver;
+  final questionIndex;
+  final startOver;
   Result(this.resultScore, this.questionIndex, this.startOver);
   @override
   Widget build(BuildContext context) {

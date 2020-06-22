@@ -1,12 +1,20 @@
 import 'package:flutter/material.dart';
 import 'survey.dart';
 import 'result.dart';
+import 'push_notifications.dart';
+// import 'package:firebase_messaging/firebase_messaging.dart';
+
+
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
+    // FirebaseMessaging firebaseMessaging = new FirebaseMessaging();
+    // firebaseMessaging.subscribeToTopic('main-topic');
+    // print('subscribed');
+    PushNotificationsManager().subscribe();
     return MyAppState();
   }
 }
